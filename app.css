@@ -1,0 +1,6 @@
+.show-text,.show-links {
+    display: block;
+}
+.hide-links{
+    display: none;
+}
