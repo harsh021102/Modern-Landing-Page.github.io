@@ -8,6 +8,11 @@
     <title>Bookmark Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .show-text {
+        display: block;
+    }
+</style>
 
 <body>
     <!-- Header -->
@@ -202,22 +207,49 @@
             </div>
             <!-- FAQ Items -->
             <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
-                <div class="flex items-center border-b py-4">
-                    <span class="flex-1">What is a Bookmark?</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="flex items-center border-b py-4">
-                    <span class="flex-1">How can I request a new browser?</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="flex items-center border-b py-4">
-                    <span class="flex-1">Is there a mobile app?</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="flex items-center border-b py-4">
-                    <span class="flex-1">What about other Chromium browsers?</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
+                <article class="question">
+                    <div class="question-btn flex items-center border-b py-4">
+                        <span class="flex-1">What is a Bookmark?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- question text -->
+                    <div class="q-text hidden border-b py-4 bg-bookmark-white">
+                        <p class="pl-4 text-sm">A bookmark is a saved link to a Web page that has been added to a list
+                            of saved links.</p>
+                    </div>
+                </article>
+                <article class="question">
+                    <div class="question-btn flex items-center border-b py-4">
+                        <span class="flex-1">How can I request a new browser?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- question text -->
+                    <div class="q-text hidden border-b py-4 bg-bookmark-white">
+                        <p class="pl-4 text-sm">You need to go to the browser manufactorer's website or use your
+                            Phone/Tablet's "App Store".
+                        </p>
+                    </div>
+                </article>
+                <article class="question">
+                    <div class="question-btn flex items-center border-b py-4">
+                        <span class="flex-1">What about other Chromium browsers?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- question text -->
+                    <div class="q-text hidden border-b py-4 bg-bookmark-white">
+                        <p class="pl-4 text-sm">It is available for other browsers too.</p>
+                    </div>
+                </article>
+                <article class="question">
+                    <div class="question-btn flex items-center border-b py-4">
+                        <span class="flex-1">Is there a mobile app?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <!-- question text -->
+                    <div class="q-text hidden border-b py-4 bg-bookmark-white">
+                        <p class="pl-4 text-sm">Yes, our app is available on playstore.</p>
+                    </div>
+                </article>
                 <button type="button"
                     class=" flex self-center mt-12 btn btn-purple hover:bg-bookmark-white hover:text-black">More
                     Info</button>
@@ -260,5 +292,6 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/2317381351.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 
 </html>
